@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_jalali',
+    'drf_yasg',
     # apps
     'user_app',
     'dentist_app'
