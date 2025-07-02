@@ -1,0 +1,82 @@
+# Python __pycache__ و فایل‌های موقت
+__pycache__/
+*.py[cod]
+*$py.class
+
+# محیط مجازی
+venv/
+env/
+ENV/
+.venv/
+
+# فایل‌های SQLite
+*.sqlite3
+*.db
+
+# تنظیمات شخصی IDE
+*.swp
+*.swo
+*.swn
+.idea/
+.vscode/
+*.code-workspace
+
+# فایل‌های log و debug
+*.log
+*.pot
+*.mo
+
+# Static/Media files (در production باید handle شود)
+staticfiles/
+media/
+
+# پوشه migrationها (در صورت نیاز به exclude migrationهای dev)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# فقط اگر نمی‌خواهی migrationها کامیت بشن:
+# **/migrations/*.py
+
+# فایل‌های Secret یا Env
+.env
+.env.*
+
+# Django specific
+local_settings.py
+db.sqlite3
+debug.log
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.cache/
+nosetests.xml
+test-results.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pyre
+.pyre/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.tmp
+*.old
